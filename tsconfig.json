@@ -1,9 +1,17 @@
 {
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
     "esModuleInterop": true,
     "lib": ["esnext"],
-    "strict": true
+    "strict": true,
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@useCases/*": ["./src/useCases/*"]
+    }
   }
 }
