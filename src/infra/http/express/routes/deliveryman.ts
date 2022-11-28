@@ -1,7 +1,9 @@
+import { AuthDeliverymanController } from "@controllers/account/authDeliveryman/AuthDeliverymanController";
 import { Router } from "express";
-import { AuthDeliverymanController } from "../../../../modules/account/useCases/authDeliveryman/AuthDeliverymanController";
-import { CreateDeliverymanController } from "../../../../modules/deliveryman/useCases/createDeliveryman/CreateDeliverymanController";
-import { FindAllDeliveriesController } from "../../../../modules/deliveryman/useCases/findAllDeliveries/FindAllDeliveriesController";
+
+import { FindAllDeliveriesController } from "@controllers/client/findAllDeliveries/FindAllDeliveriesController";
+import { CreateDeliverymanController } from "@controllers/deliveryman/createDeliveryman/CreateDeliverymanController";
+
 import { ensureAuthDeliveryman } from "../middlewares/ensureAuthDeliveryman";
 
 export const deliverymanRoutes = Router();
